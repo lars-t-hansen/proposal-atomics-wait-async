@@ -9,7 +9,7 @@
 </pre>
 <emu-intro id="intro">
   <h1>Atomics.waitAsync</h1>
-  <p>We provide a new API, `Atomics.waitAsync`, that an agent can use to wait on a shared memory location (to later be awoken by some agent calling Atomics.wake on that location) without waiting synchronously (ie, without blocking). Notably this API is useful in agents whose [[CanBlock]] attribute is false, such as the main thread of a web browser document, but the API is not restricted to such agents.</p>
+  <p>We provide a new API, `Atomics.waitAsync`, that an agent can use to wait on a shared memory location (to later be awoken by some agent calling Atomics.notify on that location) without waiting synchronously (ie, without blocking). Notably this API is useful in agents whose [[CanBlock]] attribute is false, such as the main thread of a web browser document, but the API is not restricted to such agents.</p>
   <p>The API is promise-based. Very high performance is not a requirement, but good performance is desirable.</p>
 </emu-intro>
 
